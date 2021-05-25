@@ -1,0 +1,7 @@
+{
+  "name": "list-items",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
