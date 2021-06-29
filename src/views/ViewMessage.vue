@@ -37,9 +37,8 @@ import { useRoute } from 'vue-router';
 import { IonBackButton, IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonLabel, IonNote, IonPage, IonToolbar } from '@ionic/vue';
 import { personCircle } from 'ionicons/icons';
 import { getMessage } from '../data/messages.js';
-import { defineComponent } from 'vue';
 
-export default defineComponent({
+export default ({
   name: 'Home',
   data() {
     return {

@@ -7,7 +7,7 @@
     </ion-header>
     
     <ion-content :fullscreen="true">
-      <ion-refresher  @ionRefresh="refresh($event)">
+      <ion-refresher slot="fixed"  @ionRefresh="refresh($event)">
         <ion-refresher-content></ion-refresher-content>
       </ion-refresher>
       
@@ -27,10 +27,9 @@
 <script>
 import { IonContent, IonHeader, IonList, IonPage, IonRefresher, IonRefresherContent, IonTitle, IonToolbar } from '@ionic/vue';
 import MessageListItem from '@/components/MessageListItem.vue';
-import { defineComponent } from 'vue';
 import { getMessages } from '@/data/messages.js';
 
-export default defineComponent({
+export default ({
   name: 'Home',
   data() {
     return {
